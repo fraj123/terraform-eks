@@ -8,3 +8,8 @@ variable "profile" {
   description = "AWS Account Profile"
   type        = string
 }
+
+variable "cluster_name" {
+  description = "Cluster Name"
+  type = string
+}
