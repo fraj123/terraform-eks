@@ -10,3 +10,11 @@ profile = ""
 # Cluster Name
 # -----------------------
 cluster_name = ""
+# -----------------------
+# Working Environment
+# -----------------------
+environment = ""
+# -----------------------
+# Workspace
+# -----------------------
+workspace = ""
