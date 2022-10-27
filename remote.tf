@@ -3,11 +3,13 @@ terraform {
 }
 
 data "terraform_remote_state" "state" {
-  backend = "s3"
-  config {
-    bucket  = "${var.cluster_name}"
+  backend   = "s3"
+  workspace = "${var.workspace}"
+
+  config = {
+    bucket  = "${var.cluster_name}-bucket"
+    key     = "state/${var.environment}/terraform.tfstate"
     region  = "${var.region}"
-    key     = "${var.application}/${var.environment}"
     profile = "${var.profile}"
   }
 }

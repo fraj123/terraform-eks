@@ -11,5 +11,15 @@ variable "profile" {
 
 variable "cluster_name" {
   description = "Cluster Name"
-  type = string
+  type        = string
+}
+
+variable "environment" {
+  description = "Environment Type"
+  type        = string
+}
+
+variable "workspace" {
+  description = "Current workspce"
+  type        = string
 }
